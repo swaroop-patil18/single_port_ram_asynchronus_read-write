@@ -1,0 +1,103 @@
+$date
+    Nov  5, 2025  10:42:57
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s086
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_single_port_ram_async $end
+$var parameter 32 !    ADDR_WIDTH  $end
+$var parameter 32 "    DATA_WIDTH  $end
+$var reg       8 #    addr [7:0] $end
+$var reg      16 $    din [15:0] $end
+$var reg       1 %    we  $end
+$var reg       1 &    cs  $end
+$var wire     16 '    dout [15:0] $end
+
+$scope module uut $end
+$var parameter 32 (    ADDR_WIDTH  $end
+$var parameter 32 )    DATA_WIDTH  $end
+$var wire      8 *    addr [7:0] $end
+$var wire     16 +    din [15:0] $end
+$var wire      1 ,    we  $end
+$var wire      1 -    cs  $end
+$var wire     16 '    dout [15:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b10000 )
+b1000 (
+b10000 "
+b1000 !
+b0 #
+b0 $
+0%
+0&
+bz '
+b0 *
+b0 +
+0,
+0-
+$end
+#10000
+1&
+1%
+b101 #
+b1010101010101010 $
+b1010101010101010 +
+b101 *
+1,
+1-
+#20000
+b110 #
+b101010101010101 $
+b101010101010101 +
+b110 *
+#30000
+b111 #
+b1111000000001101 $
+b1111000000001101 +
+b111 *
+#40000
+0%
+0,
+b1111000000001101 '
+#50000
+b101 #
+b101 *
+b1010101010101010 '
+#60000
+b110 #
+b110 *
+b101010101010101 '
+#70000
+b111 #
+b111 *
+b1111000000001101 '
+#90000
+b101 #
+b101 *
+b1010101010101010 '
+#95000
+b110 #
+b110 *
+b101010101010101 '
+#100000
+b111 #
+b111 *
+b1111000000001101 '
+#105000
+b101 #
+b101 *
+b1010101010101010 '
+#110000
+0&
+0-
+bz '
+#120000
